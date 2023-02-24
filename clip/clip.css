@@ -1,0 +1,573 @@
+* {
+  --color: {{ initParams.color }};
+  --font-color: {{ initParams.color }};
+  --venue-town-image1: url({{initParams.venue.townImage1}});
+  --venue-town-image2: url({{initParams.venue.townImage2}});
+  --venue-town-image3: url({{initParams.venue.townImage3}});
+  --venue-image: url({{initParams.venue.img}});
+  /* 
+    This is an example of how to use MotorCortex's init params in css, using a css variable
+      if you are unfamiliar with css variables here is a quick guide https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#basic_usage
+  */
+}
+.root {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  color: #232323;
+}
+
+/*scene1*/
+.scene-1{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+  
+.cercle{
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cercle-1{
+  border: 75px solid var(--color);
+  height: 306px;
+  left: -150px;
+  top: 844px;
+  width: 306px;
+}
+
+.cercle-2{
+  border: 65px solid var(--color);
+  height: 100px;
+  left: 1628px;
+  top: 772px;
+  width: 100px;
+}
+.cercle-3{
+  border: 35px solid var(--color);
+  height: 20px;
+  left: 1500px;
+  top: 160px;
+  width: 20px;
+}
+.cercle-4{
+  border: 20px solid var(--color);
+  height: 30px;
+  left: 300px;
+  top: 160px;
+  width: 30px;
+}
+/*scene2*/
+.scene-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  
+}
+
+.conf-title{
+  font-weight: 900;
+  font-size: 150px;
+  position: relative;
+  top: 100%;
+}
+
+.scene-2 .date-title{
+  font-size: 40px;
+  font-weight: 300;
+  position: relative;
+  top: -100%;
+}
+
+.conf-title-wrapper,.scene-2 .date-title-wrapper{
+  overflow: hidden;
+}
+
+.sponsor-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  top: 100px;
+}
+
+.logos-wrapper{
+  overflow: hidden;
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 250px;
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.sponsor-title,.logo{
+  opacity: 0;
+}
+
+.logo{
+  flex: 0 0 21%;
+}
+
+/*scene3*/
+.scene-3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.waves{
+  background-image: url(https://svgshare.com/i/mSd.svg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: .1;
+}
+
+/*scene4*/
+.scene-4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.ball{
+  width: 10px;
+  height: 10px;
+  background-color: var(--color);
+  position: absolute;
+  top: 101%;
+  border-radius: 50%;
+  transform: translate(-50% , -50%);
+  left: 50%;
+}
+
+.white-ball{
+  background-color: #f7f7f7;
+}
+
+/*scene5*/
+.scene-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 900;
+  top: 0;
+  left: 0;
+}
+
+.day-name{
+  position: absolute;
+  opacity: 0;
+}
+
+.day-number{
+  font-size: 300px;
+  color: transparent;
+  -webkit-text-stroke: 4px var(--color);
+  position: absolute;
+  left: 100%;
+}
+.month-name{
+  font-size: 50px;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color);
+  position: absolute;
+  text-transform: uppercase;
+  left: 100%;
+}
+
+.day-number-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  left: 80px;
+  overflow: hidden;
+  position: absolute;
+  top: 700px;
+  width: 350px;
+}
+
+.day-name-wrapper{
+  height: 300px;
+  left: 80px;
+  overflow: hidden;
+  position: absolute;
+  top: 100px;
+  width: 350px;
+}
+
+.name-wrapper{
+  height: 65px;
+  left: 870px;
+  overflow: hidden;
+  position: absolute;
+  top: 500px;
+  width: 350px;
+}
+.surname-wrapper{
+  height: 65px;
+  left: 870px;
+  overflow: hidden;
+  position: absolute;
+  top: 565px;
+  width: 50%;
+}
+
+/**/
+.image-wrapper{
+  background-color: var(--color);
+  border-radius: 50%;
+  filter: drop-shadow(1px 0 15px #00000031);
+  left:600px;
+  position: absolute;
+  top: -100%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}
+.image-wrapper-background{
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+}
+/**/
+
+.surname-wrapper{
+  top: 565px;
+}
+
+.position-wrapper{
+  font-size: 44px;
+  font-weight: 300;
+  left: 870px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 60%;
+  width: 575px;
+  overflow: hidden;
+  height: 150px;
+}
+
+.speech-wrapper{
+  font-size: 40px;
+    width: 300px;
+    background: var(--color);
+    color: white;
+    padding: 60px;
+    position: absolute;
+    left: 1393px;
+    bottom: -50%;
+}
+.speech{
+  opacity: 0;
+}
+
+.name{
+  position: absolute;
+  top: 100%;
+}
+
+.surname{
+  position: absolute;
+  top: 100%;
+}
+
+.position-name{
+  position: absolute;
+  top:-100%;
+}
+
+.dot-box{
+  background-image: radial-gradient(#212121 20%, transparent 20%);
+  background-position: 0 0, 5px 5px;
+  background-size: 15px 15px;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  right: 300px;
+  top: 20px;
+  opacity: 0;
+}
+
+.cercle-9{
+  border: 55px solid var(--color);
+  width: 84px;
+  height: 84px;
+  left: 1100px;
+  top: -100%;
+}
+.cercle-10{
+  border: 35px solid var(--color);
+  width: 384px;
+  height: 384px;
+  left: 700px;
+  top: -50%;
+} 
+
+/*scene6*/
+.scene-6,.scene-7{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.venue-town-image-wrapper1{
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  filter: drop-shadow(1px 0 15px #00000031);
+  background-color: var(--color);
+  border-radius: 100%;
+  overflow: hidden;
+  left:-860px;
+  top: 150px;
+}
+
+.venue-town-image-wrapper2{
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  filter: drop-shadow(1px 0 15px #00000031);
+  border-radius: 100%;
+  left:-860px;
+  top: 610px;
+  border: 30px solid var(--color);
+}
+
+.venue-town-image-wrapper3{
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  filter: drop-shadow(1px 0 15px #00000031);
+  border-radius: 100%;
+  left:-860px;
+  top: 50px;
+  border: 40px solid var(--color);
+}
+
+.venue-town-image1{
+  width: 650px;
+  height: 650px;
+  background: var(--venue-town-image1);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.venue-town-image2{
+  width: 460px;
+  height: 460px;
+  background: var(--venue-town-image2); 
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.venue-town-image3{
+  width: 400px;
+  height: 400px;
+  background: var(--venue-town-image3); 
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hall-wrapper{
+  font-weight: 300;
+  font-size: 44px;
+}
+
+.scene-6 .hall-wrapper,.scene-6 .building-wrapper{
+  position: relative;
+  right: -100%;
+}
+
+.scene-6 .text-wrapper{
+  left: 500px;
+  position: absolute;
+  top: 45%;
+  width: 440px;
+  overflow: hidden;
+}
+
+.cercle-5{
+  border: 75px solid var(--color);
+  width: 84px;
+  height: 84px;
+  left:-860px;
+  top: 100px;
+}
+.cercle-6{
+  border: 75px solid var(--color);
+  width: 384px;
+  height: 384px;
+  left:-860px;
+  top: 900px;
+} 
+
+/*scene7*/
+
+.venue-image-wrapper{
+  position: absolute;
+  width: 850px;
+  height: 850px;
+  filter: drop-shadow(1px 0 15px #00000031);
+  background-color: var(--color);
+  border-radius: 100%;
+  overflow: hidden;
+  right:-860px
+}
+
+.venue-image{
+  width: 850px;
+  height: 850px;
+  background: var(--venue-image);
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scene-7 .hall-wrapper, .scene-7 .building-wrapper{
+  position: relative;
+  left: -100%;
+}
+
+.address-wrapper{
+  background: var(--color);
+  color: #fff;
+  font-size: 40px;
+  right: 200px;
+  padding: 40px;
+  position: absolute;
+  width: 300px;
+  top: -100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.scene-7 .text-wrapper{
+  right: 500px;
+  position: absolute;
+  top: 45%;
+  width: 440px;
+  overflow: hidden;
+}
+
+.cercle-7{
+  border: 75px solid var(--color);
+  width: 84px;
+  height: 84px;
+  right:-860px;
+  top: 100px;
+}
+.cercle-8{
+  border: 75px solid var(--color);
+  width: 384px;
+  height: 384px;
+  right:-860px;
+  top: 870px;
+} 
+
+/*scene8*/
+.scene-8 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.scene-8 .text{
+  font-size: 100px;
+    font-weight: 900;
+    position: absolute;
+    text-transform: uppercase;
+    top: 100%;
+}
+
+.scene-8 .text-wrapper{
+  overflow: hidden;
+    position: absolute;
+    top: 35%;
+    width: 1284px;
+    height: 100px;
+}
+
+.scene-8 .date-title,.link{
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+  top: -100%;
+  opacity: 0;
+}
+
+.scene-8 .date-title-wrapper{
+  overflow: hidden;
+  position: absolute;
+  top: 75%;
+}
+
+.link{
+  top: 32%;
+  font-weight: 100;
+  opacity: 0;
+  color: black;
+  text-decoration: none;
+}

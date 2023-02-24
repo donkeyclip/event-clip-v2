@@ -1,0 +1,150 @@
+<div class="root">
+   <!-- scene-3 -->
+   <div class="scene-3">
+    <div class="waves"></div>
+  </div>
+  <!-- scene-1 -->
+  <div class="scene-1">
+    <div class="cercle cercle-1"></div>
+    <div class="cercle cercle-2"></div>
+    <div class="cercle cercle-3"></div>
+    <div class="cercle cercle-4"></div>
+  </div>
+  <!-- scene-2 -->
+  <div class="scene-2">
+    <div class="conf-title-wrapper ">
+      <div class="conf-title">
+        {{initParams.title}}
+      </div>
+    </div>
+    <div class="date-title-wrapper">
+      <div class="date-title">
+        {{initParams.subTitle}}
+      </div>
+    </div>
+    <div class="sponsor-wrapper">
+      <div class="sponsor-title">Sponsored by</div>
+      <div class="logos-wrapper">
+        <div class="logo" mc-for="key,item" mc-of="initParams.sponsors" style="background-image: url({{item}});">
+      </div>
+    </div>
+   </div>
+  </div>
+  <!-- scene-4 -->
+  <div class="scene-4">
+    <div class="blue-ball ball"></div>
+    <div class="white-ball ball"></div>
+  </div>
+   <!-- scene-5 -->
+   <div class="con">
+    <div class="scene-5" mc-for="key,item" mc-of="initParams.speekers">
+      <div class="dot-box"></div>
+      <div class="cercle cercle-9"></div>
+      <div class="cercle cercle-10"></div>
+      <div class="day-name-wrapper">
+        <div class="day-name">{{item.dayName}}</div>
+      </div>
+      <div class="day-number-wrapper">
+        <div class="day-number">{{item.dayNumber}}</div>
+        <div class="month-name">{{item.monthName}}</div>
+      </div>
+      <div class="image-wrapper">
+        <div class="image-wrapper-background">
+          <div class="image" style="background: url({{item.img}});
+                                    width: 400px;
+                                    height: 400px;
+                                    border-radius: 50%;
+                                    background-repeat: no-repeat;
+                                    background-size: cover;
+                                    transform: translate(-50%, -50%);
+                                    top:50%;
+                                    left: 50%;
+                                    position: absolute;">
+          </div>
+        </div>
+      </div>
+  
+      <div class="name-wrapper">
+        <div class="name">{{item.name}}</div>
+      </div>
+      <div class="surname-wrapper">
+        <div class="surname">{{item.surname}}</div>
+      </div>
+      <div class="position-wrapper">
+        <div class="position-name">{{item.positionName}}</div>
+      </div>
+      <div class="speech-wrapper">
+        <div class="speech"> {{item.speech}}</div>
+      </div>
+    </div>
+  </div>
+   <!-- scene-6 -->
+   <div class="scene-6">
+    <div class="cercle-5 cercle"></div>
+    <div class="cercle-6 cercle"></div>
+    <div class="venue-town-image-wrapper1">
+      <div class="venue-town-image1"></div>
+    </div>
+    <div class="venue-town-image-wrapper2">
+      <div class="venue-town-image2"></div>
+    </div>
+    <div class="venue-town-image-wrapper3">
+      <div class="venue-town-image3"></div>
+    </div>
+    <div class="text-wrapper">
+      <div class="building-wrapper">
+        {{initParams.venue.town}}
+      </div>
+      <div class="hall-wrapper">
+        {{initParams.venue.country}}
+      </div>
+    </div>
+  </div>
+  <!-- scene-7 -->
+  <div class="scene-7">
+    <div class="cercle-7 cercle"></div>
+    <div class="cercle-8 cercle"></div>
+    <div class="venue-image-wrapper">
+      <div class="venue-image"></div>
+    </div>
+    <div class="text-wrapper">
+      <div class="building-wrapper">
+        {{initParams.venue.building}}
+      </div>
+      <div class="hall-wrapper">
+        {{initParams.venue.hall}}
+      </div>
+    </div>
+  
+    <div class="address-wrapper">
+  
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="150"
+        height="100" viewBox="0 0 256 256" xml:space="preserve">
+  
+        <defs>
+        </defs>
+        <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;"
+          transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+          <path
+            d="M 45 0 C 25.463 0 9.625 15.838 9.625 35.375 c 0 8.722 3.171 16.693 8.404 22.861 L 45 90 l 26.97 -31.765 c 5.233 -6.167 8.404 -14.139 8.404 -22.861 C 80.375 15.838 64.537 0 45 0 z M 45 48.705 c -8.035 0 -14.548 -6.513 -14.548 -14.548 c 0 -8.035 6.513 -14.548 14.548 -14.548 s 14.548 6.513 14.548 14.548 C 59.548 42.192 53.035 48.705 45 48.705 z"
+            style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255, 255, 255); fill-rule: nonzero; opacity: 1;"
+            transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+        </g>
+      </svg>
+      <div> {{initParams.venue.address}}</div>
+    </div>
+  </div>
+  <!-- scene-8 -->
+  <div class="scene-8">
+    <div class="text-wrapper">
+      <div class="text">Thanks our Sponsors</div>
+    </div>
+    <div class="date-title-wrapper">
+      <div class="date-title">
+        {{initParams.subTitle}}
+      </div>
+    </div>
+    <a class="link" href="{{initParams.eventLink}}">{{initParams.eventLink}}</a>
+  
+  </div>
+</div>
