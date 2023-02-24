@@ -5,7 +5,7 @@ export default [
       eventLink: "https://staging-client.bluetree.events/tt",
       color: "#0000ff",
       title: "Tech Thess",
-      subTitle: "Greece, Thessaloniki Sep 20 - 21 Sep 2022",
+      subTitle: "Greece, Thessaloniki 28 February - 1 March 2023",
       venue: {
         img: "https://i.ibb.co/NWmRfGD/venue.jpg",
         address: "Martiou 25 & Paralia",
@@ -13,9 +13,9 @@ export default [
         hall: "Emilios Riadis Hall",
         town: "Thessaloniki",
         country: "Greece",
-        townImage1: "assets/town.jpg",
-        townImage2: "assets/town2.jpg",
-        townImage3: "assets/town3.jpg",
+        townImage1: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town.jpg",
+        townImage2: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town2.jpg",
+        townImage3: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town3.jpg",
       },
       sponsors: [
         "https://i.ibb.co/Xj04CGH/git.png",
@@ -24,9 +24,9 @@ export default [
       ],
       speekers: [
         {
-          dayName: "Wednesday",
-          dayNumber: "20",
-          monthName:"September",
+          dayName: "Tuesday",
+          dayNumber: "28",
+          monthName:"February",
           name: "Theofilos",
           surname: "Papadopoulos",
           positionName: "Lead Software Engineer",
@@ -34,8 +34,8 @@ export default [
           img: "https://i.ibb.co/M2V3qg0/teo.jpg",
         },
         {
-          dayName: "Friday",
-          dayNumber: "08",
+          dayName: "Wednesday",
+          dayNumber: "01",
           monthName:"March",
           name: "Ivan",
           surname: "Vlachos",

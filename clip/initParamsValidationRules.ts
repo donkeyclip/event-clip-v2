@@ -39,7 +39,7 @@ export default {
     },
   },
   speekers: {
-    label: "Speekers",
+    label: "Speakers",
     type: "array",
     items: {
       type: "object",

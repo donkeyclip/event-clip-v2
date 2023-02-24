@@ -25,6 +25,12 @@ const clip = new HTMLClip({
     width: "1920px",
     height: "1080px",
   },
+  fonts: [
+    {
+      type: `google-font`,
+      src: `https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap`,
+    },
+  ],
 });
 ///scene1
 clip.addIncident(Top("-100%", ".cercle-1", 1500, "easeInOutCubic"), 5000);

@@ -150,7 +150,7 @@ export const speakerCombo = new Combo(
         incidentClass: CSSEffect,
         attrs: {
          animatedAttrs: {
-          top:"53%"
+          top:"45%"
          }
         },
         props: {
