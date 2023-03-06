@@ -47,8 +47,7 @@ clip.addIncident(
 clip.addIncident(Top("-100%", ".scene-2", 1500, "easeInOutCubic"), 5000);
 clip.addIncident(Opacity(0, ".sponsor-title,.logo", 1, "@stagger(0, 1)"), 6500);
 clip.addIncident(Top("100%", ".sponsor-wrapper", 1), 6501);
-///scene3
-clip.addIncident(Scale(1.3, ".waves", 5000), 0);
+
 ///scene4
 clip.addIncident(Top("50%", ".ball", 1500, "easeInOutCubic"), 5000);
 clip.addIncident(Size("3000px", ".blue-ball", 1600, "easeOutSine"), 5300);
