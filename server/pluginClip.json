@@ -1,0 +1,103 @@
+{
+    "ClassName": "HTMLClip",
+    "version": "9.5.6",
+    "plugin": "@donkeyclip/self-contained-incidents",
+    "plugin_npm_name": "@donkeyclip/self-contained-incidents",
+    "attrs": {},
+    "props": {
+        "host": {},
+        "html": "<div class=\\"container\\">\\n      <div class=\\"layer layer-1\\"></div>\\n      <div class=\\"layer layer-2\\"></div>\\n      <div class=\\"layer layer-3\\">\\n        <p>This sample Clip</p>\\n        <p>uses two different plugins' Animations</p>\\n        <p>combined.</p>\\n      </div>\\n    </div>",
+        "css": "\\n    .container{\\n      background: black;\\n      position: relative;\\n      width: 600px;\\n      height: 400px;\\n    }\\n    .layer{\\n      position: absolute;\\n      width: 600px;\\n      height: 400px;\\n    }\\n    .layer-1{\\n      z-index: 1;\\n    }\\n    .layer-2{\\n      z-index: 2;\\n      top: 100px;\\n    }\\n    .layer-3{\\n      z-index: 3;\\n      color: white;\\n      text-align: center;\\n      padding-top: 100px;\\n      font-size: 20px;\\n    }\\n    .layer-3 p{\\n      font-family: 'Open Sans', sans-serif;\\n      opacity: 0;\\n    }\\n  ",
+        "fonts": [
+            {
+                "type": "google-font",
+                "src": "https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+            },
+            {
+                "type": "google-font",
+                "src": "https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+            },
+            {
+                "type": "google-font",
+                "src": "https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            }
+        ],
+        "containerParams": {
+            "width": "600px",
+            "height": "400px"
+        }
+    },
+    "incidents": {
+        "644982d3-4feb-57fa": {
+            "id": "644982d3-4feb-57fa",
+            "position": 0,
+            "leaf": {
+                "ClassName": "Grid",
+                "version": "0.3.0",
+                "plugin": "@donkeyclip/motorcortex-backgrounds",
+                "plugin_npm_name": "@donkeyclip/self-contained-incidents",
+                "attrs": {
+                    "width": 600,
+                    "height": 400,
+                    "color": "#FFF",
+                    "columns": 6,
+                    "rows": 4,
+                    "timing": 2.5
+                },
+                "props": {
+                    "selector": ".layer-1",
+                    "duration": 1974.0121104085622
+                },
+                "incidents": {},
+                "duration": 1974.0121104085622
+            }
+        },
+        "63b719c1-e60a-837c": {
+            "id": "63b719c1-e60a-837c",
+            "position": 1000,
+            "leaf": {
+                "ClassName": "RotatedTextReveal",
+                "version": "1.4.0",
+                "plugin": "@donkeyclip/motorcortex-animetitles",
+                "plugin_npm_name": "@donkeyclip/self-contained-incidents",
+                "attrs": {
+                    "text": "Rotated Reveal Incident",
+                    "width": 600,
+                    "color": "white",
+                    "fontFamily": "Righteous",
+                    "fontSize": 40,
+                    "stagger": "0, 300",
+                    "exitTime": 1000,
+                    "textTransform": "capitalize"
+                },
+                "props": {
+                    "selector": ".layer-2",
+                    "duration": 1900
+                },
+                "incidents": {},
+                "duration": 1900
+            }
+        },
+        "ceb5d314-b7af-187a": {
+            "id": "ceb5d314-b7af-187a",
+            "position": 7800,
+            "leaf": {
+                "ClassName": "CSSEffect",
+                "version": "*",
+                "plugin": "@donkeyclip/css-layer",
+                "plugin_npm_name": "@donkeyclip/css-layer",
+                "attrs": {
+                    "animatedAttrs": {
+                        "opacity": 1
+                    }
+                },
+                "props": {
+                    "selector": ".layer-3 p",
+                    "duration": 2000,
+                    "delay": "@stagger(0, 1000)"
+                }
+            }
+        }
+    },
+    "duration": 10800
+}

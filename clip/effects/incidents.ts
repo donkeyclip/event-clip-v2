@@ -28,11 +28,21 @@ export const FillLogo = (selector, duration, easing = "linear") =>
     }
   );
 
-export const Top = (value, selector, duration, easing = "linear", delay = 0) =>
+export const Top = (
+  value,
+  initialValue,
+  selector,
+  duration,
+  easing = "linear",
+  delay = 0
+) =>
   new CSSEffect(
     {
       animatedAttrs: {
         top: value,
+      },
+      initialValues: {
+        top: initialValue,
       },
     },
     {
@@ -57,7 +67,13 @@ export const Left = (value, selector, duration, easing = "linear", delay = 0) =>
       delay,
     }
   );
-export const Right = (value, selector, duration, easing = "linear", delay = 0) =>
+export const Right = (
+  value,
+  selector,
+  duration,
+  easing = "linear",
+  delay = 0
+) =>
   new CSSEffect(
     {
       animatedAttrs: {
@@ -68,7 +84,7 @@ export const Right = (value, selector, duration, easing = "linear", delay = 0) =
       selector,
       duration,
       easing,
-      delay
+      delay,
     }
   );
 

@@ -1,0 +1,110 @@
+{
+    "ClassName": "HTMLClip",
+    "version": "8.0.4",
+    "plugin": "@donkeyclip/self-contained-incidents",
+    "plugin_npm_name": "@donkeyclip/self-contained-incidents",
+    "attrs": {},
+    "props": {
+        "id": "my-clip",
+        "host": {},
+        "html": "\n    <div class=\"root\">\n      <div class=\"title\">Stagger Example</div>\n      <div class=\"flex\">\n      <div class=\"box-wraper\"><div class=\"box box0 \"></div><div class=\"box box1 \"></div><div class=\"box box2 \"></div><div class=\"box box3 \"></div></div><div class=\"box-wraper\"><div class=\"box box0 \"></div><div class=\"box box1 \"></div><div class=\"box box2 \"></div><div class=\"box box3 \"></div></div><div class=\"box-wraper\"><div class=\"box box0 \"></div><div class=\"box box1 \"></div><div class=\"box box2 \"></div><div class=\"box box3 \"></div></div><div class=\"box-wraper\"><div class=\"box box0 \"></div><div class=\"box box1 \"></div><div class=\"box box2 \"></div><div class=\"box box3 \"></div></div><div class=\"box-wraper\"><div class=\"box box0 \"></div><div class=\"box box1 \"></div><div class=\"box box2 \"></div><div class=\"box box3 \"></div></div>\n     </div>\n    </div>",
+        "css": "\n    .root{\n      background:white;\n      width:100%;\n      height:100%;\n      font-family: 'Montserrat', sans-serif;\n      display: flex;\n      justify-content: center;\n      flex-direction: column;\n      align-items: center;\n    }\n    .title{\n      margin-bottom: 30px;\n      font-size: 50px;\n      color:#21084f;\n    }\n    .box{\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      justify-content: space-around;\n      height: 60px;\n      border: 3px solid;\n      margin: 10px;\n    }\n    .box-wraper{\n      width: 100px;\n    }\n    .flex{\n      display: flex;\n      justify-content: center;\n    }\n  ",
+        "fonts": [
+            {
+                "type": "google-font",
+                "src": "https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+            }
+        ],
+        "containerParams": {
+            "width": "600px",
+            "height": "600px"
+        }
+    },
+    "incidents": {
+        "49ac9491-2d6a-6a7e": {
+            "id": "49ac9491-2d6a-6a7e",
+            "position": 0,
+            "leaf": {
+                "ClassName": "CSSEffect",
+                "version": "*",
+                "plugin": "@donkeyclip/css-layer",
+                "plugin_npm_name": "@donkeyclip/css-layer",
+                "attrs": {
+                    "animatedAttrs": {
+                        "background": "#21084f"
+                    }
+                },
+                "props": {
+                    "selector": ".box0",
+                    "duration": 1500,
+                    "easing": "easeOutQuart",
+                    "delay": "@stagger(0, 1000)"
+                }
+            }
+        },
+        "0b3bfbb0-8ff6-e353": {
+            "id": "0b3bfbb0-8ff6-e353",
+            "position": 2000,
+            "leaf": {
+                "ClassName": "CSSEffect",
+                "version": "*",
+                "plugin": "@donkeyclip/css-layer",
+                "plugin_npm_name": "@donkeyclip/css-layer",
+                "attrs": {
+                    "animatedAttrs": {
+                        "background": "#21084f"
+                    }
+                },
+                "props": {
+                    "selector": ".box1",
+                    "duration": 1500,
+                    "easing": "easeOutQuart",
+                    "delay": "@stagger(0, 1000,.5)"
+                }
+            }
+        },
+        "76bef232-7082-f1bd": {
+            "id": "76bef232-7082-f1bd",
+            "position": 4000,
+            "leaf": {
+                "ClassName": "CSSEffect",
+                "version": "*",
+                "plugin": "@donkeyclip/css-layer",
+                "plugin_npm_name": "@donkeyclip/css-layer",
+                "attrs": {
+                    "animatedAttrs": {
+                        "background": "#21084f"
+                    }
+                },
+                "props": {
+                    "selector": ".box2",
+                    "duration": 1500,
+                    "easing": "easeOutQuart",
+                    "delay": "@stagger(0, 1000,.5,linear,omni)"
+                }
+            }
+        },
+        "f6292b14-543b-177c": {
+            "id": "f6292b14-543b-177c",
+            "position": 6000,
+            "leaf": {
+                "ClassName": "CSSEffect",
+                "version": "*",
+                "plugin": "@donkeyclip/css-layer",
+                "plugin_npm_name": "@donkeyclip/css-layer",
+                "attrs": {
+                    "animatedAttrs": {
+                        "background": "#21084f"
+                    }
+                },
+                "props": {
+                    "selector": ".box3",
+                    "duration": 1500,
+                    "easing": "easeOutQuart",
+                    "delay": "@stagger(0, 1000,.5,linear,omni,true)"
+                }
+            }
+        }
+    },
+    "duration": 8500
+}

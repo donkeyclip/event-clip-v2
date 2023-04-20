@@ -26,6 +26,7 @@
   width: 100%;
   height: 100%;
   position: absolute;
+  opacity: 0;
 }
   
 .cercle{
@@ -197,7 +198,7 @@
   left: 80px;
   overflow: hidden;
   position: absolute;
-  top: 700px;
+  top: 64%;
   width: 350px;
 }
 
@@ -206,7 +207,7 @@
   left: 80px;
   overflow: hidden;
   position: absolute;
-  top: 100px;
+  top: 0.5%;
   width: 350px;
 }
 
@@ -215,7 +216,7 @@
   left: 870px;
   overflow: hidden;
   position: absolute;
-  top: 500px;
+
   width: 350px;
 }
 .surname-wrapper{
@@ -223,7 +224,7 @@
   left: 870px;
   overflow: hidden;
   position: absolute;
-  top: 565px;
+  top: 48%;
   width: 50%;
 }
 
@@ -231,7 +232,6 @@
 .image-wrapper{
   background-color: var(--color);
   border-radius: 50%;
-  filter: drop-shadow(1px 0 15px #00000031);
   left:600px;
   position: absolute;
   top: -100%;
@@ -252,7 +252,7 @@
 /**/
 
 .surname-wrapper{
-  top: 565px;
+  top: 48%;
 }
 
 .position-wrapper{
@@ -261,7 +261,6 @@
   left: 870px;
   position: absolute;
   text-transform: uppercase;
-  top: 60%;
   width: 575px;
   overflow: hidden;
   height: 150px;
@@ -304,7 +303,7 @@
   height: 400px;
   position: absolute;
   right: 300px;
-  top: 20px;
+  top: 2%;
   opacity: 0;
 }
 
@@ -335,12 +334,13 @@
   font-size: 60px;
   font-weight: 900;
 }
-
+.test{
+  color: red;
+}
 .venue-town-image-wrapper1{
   position: absolute;
   width: 650px;
   height: 650px;
-  filter: drop-shadow(1px 0 15px #00000031);
   background-color: var(--color);
   border-radius: 100%;
   overflow: hidden;
@@ -352,7 +352,6 @@
   position: absolute;
   width: 400px;
   height: 400px;
-  filter: drop-shadow(1px 0 15px #00000031);
   border-radius: 100%;
   left:-860px;
   top: 610px;
@@ -363,7 +362,6 @@
   position: absolute;
   width: 320px;
   height: 320px;
-  filter: drop-shadow(1px 0 15px #00000031);
   border-radius: 100%;
   left:-860px;
   top: 50px;
@@ -447,7 +445,6 @@
   position: absolute;
   width: 850px;
   height: 850px;
-  filter: drop-shadow(1px 0 15px #00000031);
   background-color: var(--color);
   border-radius: 100%;
   overflow: hidden;

@@ -13,9 +13,12 @@ export default [
         hall: "Emilios Riadis Hall",
         town: "Thessaloniki",
         country: "Greece",
-        townImage1: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town.jpg",
-        townImage2: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town2.jpg",
-        townImage3: "https://elisavetampatzidou.github.io/event-clip-v2/server/assets/town3.jpg",
+        townImage1:
+          "https://donkeyclip.github.io/event-clip-v2/server/assets/town.jpg",
+        townImage2:
+          "https://donkeyclip.github.io/event-clip-v2/server/assets/town2.jpg",
+        townImage3:
+          "https://donkeyclip.github.io/event-clip-v2/server/assets/town3.jpg",
       },
       sponsors: [
         "https://i.ibb.co/Xj04CGH/git.png",
@@ -26,7 +29,7 @@ export default [
         {
           dayName: "Tuesday",
           dayNumber: "28",
-          monthName:"February",
+          monthName: "February",
           name: "Theofilos",
           surname: "Papadopoulos",
           positionName: "Lead Software Engineer",
@@ -36,7 +39,7 @@ export default [
         {
           dayName: "Wednesday",
           dayNumber: "01",
-          monthName:"March",
+          monthName: "March",
           name: "Ivan",
           surname: "Vlachos",
           positionName: "Creative Developer",
